@@ -1,0 +1,54 @@
+# Samuel Emmanuel — Technical Writer Portfolio
+
+This repository contains a personal portfolio website and resume for Samuel Emmanuel, a technical writer focused on developer documentation, documentation strategy, and user-centered content.
+
+## Project overview
+
+The site presents:
+- a professional portfolio landing page
+- selected writing samples and documentation work
+- resume and professional background information
+- downloadable resume materials
+
+## Files in this repository
+
+- `index.html` — main portfolio website
+- `resume.html` — resume page version
+- `Samuel_Emmanuel_Resume.docx` — downloadable Word resume
+- `.vscode/settings.json` — editor configuration (if present in your environment)
+
+## How to view the portfolio
+
+Because this is a static HTML portfolio, there is no build step required.
+
+### Option 1: Open directly in a browser
+- Open `index.html` in your browser
+
+### Option 2: Serve locally
+From the project folder, run:
+
+```bash
+python -m http.server 8000
+```
+
+Then visit:
+
+```text
+http://localhost:8000
+```
+
+## Customization
+
+To personalize the portfolio:
+- update the hero text and bio in `index.html`
+- change the work samples and project cards in the main sections
+- adjust resume details in `resume.html`
+- replace the resume file with your latest version
+
+## Notes
+
+This project is designed as a lightweight static site, making it easy to deploy on GitHub Pages, Netlify, or any other static hosting service.
+
+## License
+
+This project is intended for personal portfolio use. Add a license if you plan to share or distribute it publicly.
