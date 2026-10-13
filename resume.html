@@ -25,7 +25,14 @@
   html, body { height: 100%; }
   body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'Inter', -apple-system, sans-serif; line-height: 1.55; }
   h1, h2, h3, h4 { font-family: 'Fraunces', Georgia, serif; font-weight: 500; margin: 0; }
-  a { color: inherit; }
+  a {
+    color: inherit;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: rgba(124,147,242,0.6);
+  }
 
   .topbar {
     position: sticky; top: 0; z-index: 10; background: var(--card);
@@ -91,45 +98,89 @@
 
   <main>
     <div class="resume-head">
-      <h1>Samuel Emmanuel</h1>
-      <div class="role">Technical Writer &amp; Content Developer</div>
-      <div class="contact">samuel.emmanuel.writer@gmail.com &nbsp;•&nbsp; linkedin.com/in/samuel-emmanuel-technicalwriter &nbsp;•&nbsp; github.com/emmz3230 &nbsp;•&nbsp; Lagos, Nigeria</div>
+      <h1>Samuel Emmanuel Olanrewaju</h1>
+      <div class="role">Technical Writer</div>
+      <div class="contact">        
+        <div>Email: <a href="mailto:emmz3230@gmail.com">emmz3230@gmail.com</a></div>
+        <div>GitHub: <a href="https://github.com/emmz3230" target="_blank" rel="noreferrer">https://github.com/emmz3230</a></div>
+      </div>
     </div>
 
     <a class="resume-download" href="Samuel_Emmanuel_Resume.docx" download="Samuel_Emmanuel_Resume.docx">&#8681; Download as .docx</a>
 
     <section class="block">
       <h3>Summary</h3>
-      <p style="color:var(--ink-soft); font-size:0.98rem;">Technical writer and content developer focused on developer experience, product documentation, and documentation strategy. I translate complex technical concepts into clear, usable guides, onboarding materials, and reference content that helps users move faster and reduces friction across the product journey.</p>
+      <p style="color:var(--ink-soft); font-size:0.98rem;">
+        Technical writer and content developer specializing in clear API documentation,
+         developer facing articles, and custom static documentation sites built with Docusaurus.
+          Experienced in transforming complex engineering concepts into developer friendly guides,
+         references, and onboarding content that reduce support load and speed up integration time. 
+   </section>
+
+    <section class="block">
+      <h3>Education</h3>
+      <div class="resume-entry" style="margin-bottom:0;">
+        <div class="row"><span class="role-co">Success Vision Foundation</span><span class="dates">July '2019</span></div>
+        <ul>
+          <li>Senior School Certificate</li>
+        </ul>
+      </div>
     </section>
 
     <section class="block">
       <h3>Experience</h3>
 
       <div class="resume-entry">
-        <div class="row"><span class="role-co">Technical Writer — Documentation &amp; Developer Experience</span><span class="dates">Jan 2023 – Present</span></div>
+        <div class="row"><span class="role-co">Freelancer</span><span class="dates">2024 – Present</span></div>
         <ul>
-          <li>Authored and maintained API reference documentation, developer guides, and release notes for internal and external audiences.</li>
-          <li>Built and improved documentation experience using static-site tooling, information architecture, and clear navigation patterns.</li>
-          <li>Partnered with engineering, product, and support teams to document new features and keep content aligned with product updates.</li>
-          <li>Wrote onboarding and quickstart content to reduce time-to-value for new users and developers.</li>
+          <li>Provide technical writing and documentation support for open-source and client-facing projects.</li>
+          <li>Create user-friendly guides, README files, and documentation sites using Markdown and Docusaurus.</li>
+          <li>Write beginner-friendly technical articles focused on frontend development, including React and TypeScript.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block">
+      <h3>Achievements</h3>
+
+      <div class="resume-entry">
+        <div class="row"><span class="role-co">AThenaCrisis</span><span class="dates">May 2024</span></div>
+        <ul>
+          <li>Technical Writer (open source contribution)</li>
+          <li>Fix typos and correct spelling by using simple English words for users</li>
+          <li>Tool use: Markdown, Hemingway, GitHub</li>
         </ul>
       </div>
 
       <div class="resume-entry">
-        <div class="row"><span class="role-co">Content Developer / Technical Writer — Product Documentation</span><span class="dates">Jun 2021 – Dec 2022</span></div>
+        <div class="row"><span class="role-co">JoinThealliance</span><span class="dates">July 2024</span></div>
         <ul>
-          <li>Produced user guides, help center documentation, and training materials for a SaaS platform serving a broad customer base.</li>
-          <li>Identified documentation gaps by reviewing support trends, product updates, and customer journeys.</li>
-          <li>Improved consistency across documentation by shaping style patterns, templates, and editorial standards.</li>
+          <li>Technical Writer (open source contribution)</li>
+          <li>Add a README for the doc section representing the documentation site</li>
+          <li>Tool use: Markdown, Hemingway, GitHub</li>
         </ul>
       </div>
 
       <div class="resume-entry">
-        <div class="row"><span class="role-co">Freelance Technical Writer — Independent</span><span class="dates">2019 – 2021</span></div>
+        <div class="row"><span class="role-co">TypeStack (Documentation site)</span></div>
         <ul>
-          <li>Delivered API documentation, whitepapers, and technical articles for clients across SaaS, developer tools, and digital products.</li>
-          <li>Managed multiple concurrent writing projects while balancing research, drafting, editing, and stakeholder feedback.</li>
+          <li>Create a documentation site using Docusaurus by using the TypeStack README</li>
+          <li>Tools used: Markdown, Vale, Google Style Guide</li>
+        </ul>
+      </div>
+
+      <div class="resume-entry">
+        <div class="row"><span class="role-co">Technical Writer (Medium)</span></div>
+        <ul>
+          <li>Write articles that are beginner friendly for readers in front end web development technologies like React and TypeScript</li>
+        </ul>
+      </div>
+
+      <div class="resume-entry" style="margin-bottom:0;">
+        <div class="row"><span class="role-co">Others</span></div>
+        <ul>
+          <li>Created two documentation sites for HTML and React Three Fiber for practice.</li>
+          <li>Joined in creating a whitepaper for a hackathon product in 2023 as a member of the organization on GitHub.</li>
         </ul>
       </div>
     </section>
@@ -137,20 +188,19 @@
     <section class="block">
       <h3>Skills</h3>
       <div class="resume-skills">
-        <p><strong>Documentation:</strong> API reference docs, developer guides, user guides, whitepapers, release notes, onboarding content</p>
-        <p><strong>Tools &amp; Platforms:</strong> Docusaurus, Markdown, Git/GitHub, Swagger/OpenAPI, Postman, Figma</p>
-        <p><strong>Other:</strong> Information architecture, style guides, cross-team collaboration, content planning, HTML/CSS/JS basics</p>
+        <p><strong>Technical:</strong> JavaScript, TypeScript, HTML, CSS, TailwindCSS, Next.js, React.js, web3.js</p>
+        <p><strong>Documentation:</strong> Technical Writing, Static Site Documentation Engineer</p>
       </div>
     </section>
 
     <section class="block">
-      <h3>Education</h3>
-      <div class="resume-entry" style="margin-bottom:0;">
-        <div class="row"><span class="role-co">B.Sc. in Computer Science — University of Lagos</span><span class="dates">2015</span></div>
+      <h3>Language</h3>
+      <div class="resume-skills">
+        <p>English</p>
       </div>
     </section>
 
-    <footer>Samuel Emmanuel · Technical Writer &amp; Content Developer · emmz3230@gmail.com</footer>
+    <footer>Samuel Emmanuel Olanrewaju · Technical Writer · emmz3230@gmail.com</footer>
   </main>
 
   <script>
